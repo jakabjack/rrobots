@@ -10,8 +10,8 @@
 #define rr_Square_h
 
 
-extern const int offsetX;
-extern const int offsetY;
+extern const int OffsetX;
+extern const int OffsetY;
 
 
 #endif

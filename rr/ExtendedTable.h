@@ -38,6 +38,12 @@
 
 
 -(int(*)[M])innerTable;
+
+
+/**
+ * checks whethe the edge touches other edges or not
+ * two edges are considered touching if they have a common point
+ */
 -(bool)isEdgeStandalone:(MyPoint)p;
 
 -(void)render:(CGContextRef)context;

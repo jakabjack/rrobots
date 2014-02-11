@@ -12,5 +12,5 @@
 #include <assert.h>
 
 
-const int offsetX = 40;
-const int offsetY = 40;
+const int OffsetX = 40;
+const int OffsetY = 40;

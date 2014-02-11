@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 
+/**
+ * draws the squares in the background
+ */
 @interface TableBackground : NSObject
 {
     CGContextRef context_;

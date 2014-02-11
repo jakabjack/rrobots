@@ -33,12 +33,12 @@
 
 -(void)drawSquareAt:(MyPoint)p
 {
-    float halfOffsetX = offsetX/2;
-    float halfOffsetY = offsetY/2;
+    float halfOffsetX = OffsetX/2;
+    float halfOffsetY = OffsetY/2;
 
     //center
-    float x = p.x*offsetX+halfOffsetX;
-    float y = p.y*offsetY+halfOffsetY;
+    float x = p.x*OffsetX+halfOffsetX;
+    float y = p.y*OffsetY+halfOffsetY;
     
     //white half
     CGContextSetStrokeColorWithColor(context_, [UIColor whiteColor].CGColor);

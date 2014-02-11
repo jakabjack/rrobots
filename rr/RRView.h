@@ -13,6 +13,10 @@
 @class EventHandler;
 
 
+/**
+ * ricochet robots view
+ * the main viewcontroller's view
+ */
 @interface RRView : UIView
 {
 }

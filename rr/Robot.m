@@ -45,10 +45,10 @@
 
 -(void)render:(CGContextRef)context
 {
-    float x = self.coord.x*offsetX;
-    float y = self.coord.y*offsetY;
+    float x = self.coord.x*OffsetX;
+    float y = self.coord.y*OffsetY;
     
-    CGRect rect = CGRectMake(x, y, offsetX, offsetY);
+    CGRect rect = CGRectMake(x, y, OffsetX, OffsetY);
     rect = CGRectInset(rect, 2, 2);
     
     if (self.isHighlighted) {

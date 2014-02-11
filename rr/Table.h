@@ -46,7 +46,10 @@ enum TableDir {
 
 -(void)render:(CGContextRef)context;
 
-//moves the currently selected robot into the specified direction till it bumps into something
+/**
+ * moves the currently selected robot into the specified direction till it bumps into something
+ * @param directionOffset having one of either x or y set to 1 or -1
+ */
 -(void)move:(MyPoint)directionOffset;
 
 //moves the currently selected robot to an absolute coordinate

@@ -64,10 +64,10 @@ static const int numSpotTypes=4;
 
 -(void)render:(CGContextRef)context
 {
-    float x = self.coord.x*offsetX;
-    float y = self.coord.y*offsetY;
+    float x = self.coord.x*OffsetX;
+    float y = self.coord.y*OffsetY;
     
-    CGRect rect = CGRectMake(x, y, offsetX, offsetY);
+    CGRect rect = CGRectMake(x, y, OffsetX, OffsetY);
     
     if (self.isHighlighted) {
         CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
@@ -123,7 +123,7 @@ static const int numSpotTypes=4;
         case 2: {
             //background color triangle
             CGContextBeginPath(context);
-            CGRect rect2 = CGRectInset(rect, offsetX*0.18, offsetY*0.18);
+            CGRect rect2 = CGRectInset(rect, OffsetX*0.18, OffsetY*0.18);
             CGContextMoveToPoint(context, rect2.origin.x+rect2.size.width/2, rect2.origin.y);
             CGContextAddLineToPoint(context, CGRectGetMaxX(rect2), CGRectGetMaxY(rect2));
             CGContextAddLineToPoint(context, CGRectGetMinX(rect2), CGRectGetMaxY(rect2));

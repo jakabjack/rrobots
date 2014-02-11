@@ -77,31 +77,31 @@ MyPoint shift(MyPoint p, MyPoint offset, bool onY)
             int ex = 2*x +1;
             int ey = 2*y +1;
             
-            int grX = x*offsetX;
-            int grY = y*offsetY;
+            int grX = x*OffsetX;
+            int grY = y*OffsetY;
             
             if (et_[ex-1][ey]) {
                 //left
                 CGContextMoveToPoint(context, grX, grY);
-                CGContextAddLineToPoint(context, grX, grY+offsetY);
+                CGContextAddLineToPoint(context, grX, grY+OffsetY);
             }
             
             if (et_[ex][ey-1]) {
                 //top 
                 CGContextMoveToPoint(context, grX, grY);
-                CGContextAddLineToPoint(context, grX+offsetX, grY);
+                CGContextAddLineToPoint(context, grX+OffsetX, grY);
             }
             
             if (x==NumSquares-1 && et_[ex+1][ey]) {
                 //last right
-                CGContextMoveToPoint(context, grX+offsetX, grY);
-                CGContextAddLineToPoint(context, grX+offsetX, grY+offsetY);
+                CGContextMoveToPoint(context, grX+OffsetX, grY);
+                CGContextAddLineToPoint(context, grX+OffsetX, grY+OffsetY);
             }
             
             if (y==NumSquares-1 && et_[ex][ey+1]) {
                 //last bottom
-                CGContextMoveToPoint(context, grX, grY+offsetY);
-                CGContextAddLineToPoint(context, grX+offsetX, grY+offsetY);
+                CGContextMoveToPoint(context, grX, grY+OffsetY);
+                CGContextAddLineToPoint(context, grX+OffsetX, grY+OffsetY);
             }
             
             CGContextStrokePath(context);
